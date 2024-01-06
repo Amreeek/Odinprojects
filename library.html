@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="library.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&family=Varela&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="popup">
+            <div class="title">
+                <div class="titleArea font center textColor">Add a newbook</div>
+            </div>
+            <div class="bookName center vertical">
+                <span class="font textColor">Book name</span>
+                <input class='bookNameTextField submit font' type="text" required>
+            </div>
+            <div class="authorName center vertical">
+                <span class="font textColor">Author Name</span>
+                <input class='authorNameTextField submit font' type="text" required>
+            </div>
+            <div class="noOfPages center vertical">
+                <span class="font textColor">Pages</span>
+                <input class='pagesTextField submit font' type="text required">
+            </div>
+            <div class="readState center">
+                <span class="font textColor">Have you read it?</span>
+                <input class='checkboxSpecific' type="checkbox">
+            </div>
+            <div class="submitButton center vertical">
+                <input class="submitButtonSpecific font" type="submit">
+            </div>
+        </div>
+        <div class="addNewButton">
+            <span id="x">+</span>
+        </div>
+        <div class="header">
+            <span id="title">Library</span>
+        </div>
+        <div class="library">
+            <div class="bookCard">
+                <span class="bookTitleLibrary font">Title1</span>
+                <span class="authorLibrary font">Author1</span>
+                <span class="pagesLiberary font">Pages1</span>
+                <div class="isRead">
+                    <span class="readNotRead font">Read</span>
+                </div> 
+                <form>
+                    <div class="removeButtonArea">
+                        <input class="removeButton font" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
